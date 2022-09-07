@@ -1,0 +1,41 @@
+{
+    "name": "m2snippets",
+    "displayName": "M2Snippets",
+    "publisher": "m2snippets",
+    "icon": "images/logo.png",
+    "author": "Rodrigo Cardoso da Luz",
+    "license": "MIT",
+    "description": "Some Snippets for Magento 2",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/diazrma/m2snippets"
+      },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/php.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+
+        ]
+    }
+}

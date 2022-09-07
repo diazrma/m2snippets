@@ -1,0 +1,13 @@
+{
+    "m2-copy-html": {
+        "scope": "html",
+        "prefix": "m2-copy-html",
+        "body": [
+            "<!--",
+            " Copyright © Hibrido. All rights reserved.",
+            " https://www.hibrido.com.br/",
+            " -->"
+        ],
+        "description": "Copyright for Devs"
+    }
+}

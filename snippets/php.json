@@ -1,0 +1,71 @@
+{
+    "m2-copy-php": {
+        "scope": "php",
+        "prefix": "m2-copy-php",
+        "body": [
+            "/**",
+            " * Copyright © Hibrido. All rights reserved.",
+            " * https://www.hibrido.com.br/",
+            " */",
+            "declare(strict_types=1);"
+        ],
+        "description": "Copyright for Devs"
+    },
+    "m2-var-dump": {
+        "scope": "php",
+        "prefix": "m2-var-dump",
+        "body": [
+            "var_dump($$1);"
+        ],
+        "description": "Magento var_dump"
+    },
+    "m2-config-module": {
+        "scope": "php",
+        "prefix": "m2-config-php",
+       "body": [
+			"/**",
+			" * Copyright © Hibrido. All rights reserved.",
+			" * https://www.hibrido.com.br/",
+			" */",
+			"declare(strict_types=1);",
+			"",
+			"namespace Hibrido\\NameModule\\Model;",
+			"",
+			"use Magento\\Framework\\App\\Config\\ScopeConfigInterface;",
+			"use Magento\\Store\\Model\\ScopeInterface;",
+			"",
+			"class Config",
+			"{",
+			"    const XML_CONFIG_PREFIX = 'NameModule/general';",
+			"    const ENABLE_PATH = self::XML_CONFIG_PREFIX . '/enabled';",
+			"    const CATEGORIES_PATH = self::XML_CONFIG_PREFIX . '/categories';",
+			"",
+			"    private ScopeConfigInterface \\$scopeConfig;",
+			"    private string \\$storeScope;",
+			"",
+			"    /**",
+			"     * @param ScopeConfigInterface \\$scopeConfig",
+			"     */",
+			"    public function __construct(",
+			"        ScopeConfigInterface \\$scopeConfig",
+			"    ) {",
+			"        \\$this->scopeConfig = \\$scopeConfig;",
+			"        \\$this->storeScope = ScopeInterface::SCOPE_STORE;",
+			"    }",
+			"",
+			"    /**",
+			"     * @return bool",
+			"     */",
+			"    public function isEnabled(\\$storeId = null): bool",
+			"    {",
+			"        return $this->scopeConfig->isSetFlag(",
+			"            self::ENABLE_PATH,",
+			"            \\$this->storeScope,",
+			"            \\$storeId",
+			"        );",
+			"    }",
+			"}"
+		],
+        "description": "Simple Config Enable Module Magento 2"
+    }
+}
