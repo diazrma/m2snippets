@@ -1,0 +1,15 @@
+{
+    "m2-copy-css": {
+        "scope": "xml",
+        "prefix": "m2-copy-css",
+        "body": [
+            "",
+            "/*",
+            "* Copyright © Hibrido. All rights reserved.",
+            "* https://www.hibrido.com.br/",
+            "*/"
+        ],
+        "description": "Copyright for Devs"
+    }
+    
+}
