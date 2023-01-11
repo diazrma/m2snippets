@@ -3,10 +3,10 @@
         "scope": "javascript",
         "prefix": "m2-copy-js",
         "body": [
-            "/*",
-            " Copyright © Hibrido. All rights reserved.",
-            "* https://www.hibrido.com.br/",
-            "*/"
+            "/**",
+            " * Copyright © Hibrido. All rights reserved.",
+            " * https://www.hibrido.com.br/",
+            " */"
         ],
         "description": "Copyright for Devs"
     }
